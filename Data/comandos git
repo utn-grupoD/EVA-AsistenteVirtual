@@ -30,5 +30,8 @@ Click en "contribuite","open pull request", "create pull request"
 
 Es una forma de revisar que los cambios no toquen algo del proyecto
 
+ACTUALIZAR TU FORK Y TU DIRECTORIO LOCAL
+primero en github dar al boton "sync fork" para actualizar con el directorio padre.
+para actualizar el repositorio que tenemos local: git pull
 
 
