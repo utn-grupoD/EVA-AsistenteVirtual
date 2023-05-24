@@ -30,4 +30,11 @@ COMANDOS QUE PUEDE REALIZAR EL ASISTENTE:
 * [Buscar informacion en Wikipedia]: "Eva, busca informacion sobre la segunda guerra mundial".
 * [Abrir Google]: "Eva, abre Google".
 * [Abrir Facebook]: "EVA, abre Facebook".
- 
+
+TECNOLOGIAS DEL PROYECTO
+- Jira Software
+- Visual Studio Code
+- Python
+- Github
+- Máquina virtual
+
