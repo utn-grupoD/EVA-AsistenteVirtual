@@ -1,6 +1,8 @@
 # EVA-AsistenteVirtual
 Proyecto para la materia Metodologia de la investigacion sobre el tema "comandos de voz" realizado en grupo.
 
+Los asistentes virtuales son programas de inteligencia artificial diseñados para ayudar a las personas en su día a día. Pueden realizar una variedad de tareas, desde reponder preguntas simples hasta controlar dispositivos domésticos inteligentes y programar recordatorios.
+
 INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS (Comandos en la terminal):
 
 * 1- 'sudo apt-get install python3'
