@@ -10,6 +10,8 @@ INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS (Comandos en la terminal):
 luego ya puede instalar con normalidad 'pip install PyAudio')
 * 5- 'pip install pywhatkit'
 * 6- 'pip install wikipedia'
+* 7- 'pip install --upgrade speechrecognition'
+* 8- 'pip install pipwin'
 
 COMANDOS QUE PUEDE REALIZAR EL ASISTENTE:
 
