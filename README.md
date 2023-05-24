@@ -2,6 +2,14 @@
 Proyecto para la materia Metodologia de la investigacion sobre el tema "comandos de voz" realizado en grupo.
 
 Los asistentes virtuales son programas de inteligencia artificial diseñados para ayudar a las personas en su día a día. Pueden realizar una variedad de tareas, desde reponder preguntas simples hasta controlar dispositivos domésticos inteligentes y programar recordatorios.
+Pueden ser controlados a través de comandos de
+voz, lo que los hace aún más convenientes para su
+uso en la vida cotidiana. Esto significa que puedes hacer preguntas, reproducir música,
+enviar mensajes y realizar otras tareas simplemente hablando con tu asistente virtual. La
+capacidad de interactuar mediante comandos de voz es una característica muy útil, ya que
+permite a las personas realizar tareas mientras tienen las manos ocupadas o están lejos de
+sus dispositivos.
+
 
 INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS (Comandos en la terminal):
 
