@@ -3,6 +3,7 @@ import speech_recognition as sr;
 import pyttsx3;
 import pywhatkit;
 import wikipedia;
+import webbrowser;
 
 name = 'eva';
 listener = sr.Recognizer();
@@ -26,8 +27,9 @@ def listen():
             if name in rec:
                 rec = rec.replace(name, '');
                 talk(rec);
-    except:
-        pass
+    except TimeoutError as msg:
+            print(msg);
+    
     return rec;
 
 def run():
@@ -43,6 +45,10 @@ def run():
         order = rec.replace('busca','');
         info = wikipedia.summary(order, 1);
         talk(info);
-
+    elif 'facebook' in rec:
+        fb = webbrowser.open('https://www.facebook.com/');
+    elif 'google' in rec:
+        gl = webbrowser.open('https://www.google.com.ar/')
+    
 
 run();
