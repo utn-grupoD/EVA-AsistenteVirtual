@@ -46,6 +46,10 @@ def run():
                     webbrowser.open('www.facebook.com')
                 if "Google" in text:
                     webbrowser.open('www.google.com')
+                if "Instagram" in text:
+                    webbrowser.open('www.instagram.com')
+                if 'Noticias' in text:
+                    webbrowser.open('www.mdzol.com')
                 if "que tal" in text:
                     print("Bien y vos?")
                 if("salir") in text:
@@ -55,11 +59,10 @@ def run():
 
 from tkinter import *
 
-
 def onClosing():
     root.destroy()
     print("Ventana cerrada")
-    
+
 def press():
     run()
 
@@ -67,16 +70,17 @@ root = Tk()
 root.title("EVA")
 root.geometry("400x150")
 root.config(bg="lightblue")
+
 mensaje = Label(root, text="Asistente Virtual", bg="lightblue", font='candara 16 bold', justify="center")
 mensaje2 = Label(root, text="Aprete el boton (Iniciar) para empezar a hablar", bg="lightblue", font='candara')
 mensaje.pack()
 mensaje2.pack()
 
-
-button = Button(root,text="Iniciar", command=press, background="green", foreground="white")
+button = Button(root, text="Iniciar", command=press, background="green", foreground="white")
 button.pack()
 
-button2 = Button(root, text="Salir", command= onClosing, background="red", foreground="white")
+button2 = Button(root, text="Salir", command=onClosing, background="red", foreground="white")
 button2.pack()
 
 root.mainloop()
+
