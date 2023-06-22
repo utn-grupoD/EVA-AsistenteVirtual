@@ -1,0 +1,45 @@
+
+________________________________________________________________________________________________________
+POR UNICA VEZ
+--------------------------------------------------------------------------------------------------------
+sudo apt install git
+	-> en github hacer un fork al proyecto
+	-> en terminal hacer git  clone -link del proyecto-
+	-> pararse con la terminal en la carpeta
+git init
+git status
+	-> agregar un archivo cualquiera a la carpeta para probar cambios
+git status
+git add . 
+git commit -m "actualizacion"
+	-> va a pedir el usuario y si no esta configurado hay que configurarlo:
+git config --global user.email -tu mail de gitgub-
+git config --global user.name -tu usuario de github-
+
+	-> como contraseña se usa un token, crearlo en: https://github.com/settings/tokens
+__________________________________________________________________________________________________________
+PARA SUBIR COSAS AL REPOSITORIO
+-------------------------------------------------------------------------------------------------------------
+	-> pararse con la terminal sobre el repositorio
+git add .
+git commit -m "nombre del commit"
+git push
+
+(Esto se sube a TU fork, o sea a tu copia del proyecto)
+
+________________________________________________________________________________________________________
+PARA UNIRLO AL PROYECTO PRINCIPAL
+--------------------------------------------------------------------------------------------------------
+Si estamos seguros del cambio entonces en github hay que unirlo con el proyecto padre
+En nuestro fork saldra "this branch is 1 commit ahead of utn-gr..."
+Click en "contribuite","open pull request", "create pull request"
+
+Es una forma de revisar que los cambios no toquen algo del proyecto
+
+________________________________________________________________________________________________________
+ACTUALIZAR TU FORK Y TU DIRECTORIO LOCAL
+--------------------------------------------------------------------------------------------------------
+primero en github dar al boton "sync fork" para actualizar con el directorio padre.
+para actualizar el repositorio que tenemos local: git pull
+
+
