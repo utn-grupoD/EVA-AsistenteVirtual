@@ -1,0 +1,30 @@
+Verificar que en la maquina virtual en el apartado dispositivos > audio este activada la salida y la entrada de audio 
+
+Puede instalar una por una manualmente: 
+	sudo apt install python3-pip
+	sudo apt-get install apt
+
+	pip install SpeechRecognition
+	sudo apt-get install portaudio19-dev
+	pip install pyaudio
+	sudo apt-get install python3-tk
+	pip install pyttsx3
+	sudo apt-get install espeak
+	pip install wikipedia
+	pip install pyjokes
+
+	pip install pillow
+	pip install --upgrade pillow
+	Si no tenemos instalado el paquete imagetk 
+		sudo apt-get install python3-pil.imagetk
+
+Para usar la instalacion automatica ingresar lo siguiente en nuestra terminal:
+	Dar permisos de ejecucion:
+		chmod +x instalar_librerias.sh
+	Ejecutar script
+		./instalar_librerias.sh
+
+
+
+
+
