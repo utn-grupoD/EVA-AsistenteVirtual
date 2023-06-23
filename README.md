@@ -11,30 +11,52 @@ permite a las personas realizar tareas mientras tienen las manos ocupadas o est�
 sus dispositivos.
 
 
-INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS (Comandos en la terminal):
+INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS MANUAL(Comandos en la terminal):
 
-* 1- 'sudo apt-get install python3'
-* 2- 'pip install SpeechRecognition'
-* 3- 'pip install pyttsx3'
-* 4- 'pip install PyAudio' (Si marca error, probar con 'sudo apt-get install portaudio19-dev python3-pyaudio'
-luego ya puede instalar con normalidad 'pip install PyAudio')
-* 5- 'pip install pywhatkit'
-* 6- 'pip install wikipedia'
-* 7- 'pip install --upgrade speechrecognition'
-* 8- 'pip install pipwin'
+  sudo apt install python3-pip
+	sudo apt-get install apt
+	pip install SpeechRecognition
+	sudo apt-get install portaudio19-dev
+	pip install pyaudio
+	sudo apt-get install python3-tk
+	pip install pyttsx3
+	sudo apt-get install espeak
+	pip install wikipedia
+	pip install pyjokes
+	pip install pillow
+	pip install --upgrade pillow
+	-> Si no tenemos instalado el paquete imagetk 
+		    sudo apt-get install python3-pil.imagetk
+
+INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS AUTOMATICA(Ejecutando un script en la terminal):
+
+Dirijase al directorio "Comandos utiles" y abra una terminal alli.
+    -> Dar permisos de ejecucion:
+    		  chmod +x instalar_librerias.sh
+    -> Ejecutar script
+    		  ./instalar_librerias.sh
+
 
 COMANDOS QUE PUEDE REALIZAR EL ASISTENTE:
 
-* [Reproducir una cancion en Youtube]: "Eva, reproduce *nombre de alguna cancion*".
-* [Decir la hora]: "Eva, dime la hora".
-* [Buscar informacion en Wikipedia]: "Eva, busca informacion sobre la segunda guerra mundial".
-* [Abrir Google]: "Eva, abre Google".
-* [Abrir Facebook]: "EVA, abre Facebook".
+* [Reproducir una cancion en Youtube]
+* [Decir la hora]
+* [Decir la fecha]
+* [Buscar informacion en Wikipedia]
+* [Abrir Google]
+* [Abrir Facebook]
+* [Abrir Mercado Libre]
+* [Abrir Github]
+* [Diario Los Andes]
+* [Decir un chiste]
+* [Abrir Spotify]
+* [Abrir la calculadora]
 
 TECNOLOGIAS DEL PROYECTO
 - Jira Software
 - Visual Studio Code
 - Python
 - Github
-- Máquina virtual
+- Máquina virtual Oracle VirtualBox
+- Ubuntu 22.04
 

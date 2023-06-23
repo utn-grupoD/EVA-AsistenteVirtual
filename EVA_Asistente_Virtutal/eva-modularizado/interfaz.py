@@ -15,7 +15,7 @@ contenedor2 = tk.Frame(ventana)
 contenedor2.pack()
 
 # Cargar la imagen
-imagen = Image.open("eva.jpeg")
+imagen = Image.open("EVA_Asistente_Virtutal/eva.jpeg")
 imagen = imagen.resize((100, 100))  # Ajustar el tamaño de la imagen según tus necesidades
 imagen = ImageTk.PhotoImage(imagen)
 
@@ -32,7 +32,7 @@ respuesta_text = tk.Text(ventana, height=6, width=40)
 respuesta_text.pack(padx=10, pady=10)
 
 # Cargar la imagen del GIF de carga y ajustar su tamaño
-imagen_carga = Image.open("carga.gif")
+imagen_carga = Image.open("EVA_Asistente_Virtutal/carga.gif")
 imagen_carga = imagen_carga.resize((30, 30))  # Ajustar el tamaño del GIF según tus necesidades
 imagen_carga = ImageTk.PhotoImage(imagen_carga)
 
