@@ -127,7 +127,7 @@ def procesar_comando(texto):
         engine.say("¡Hola! ¿En qué puedo ayudarte?")
         engine.runAndWait()
 
-    elif "ADIOS" in texto.upper():
+    elif "ADIÓS" in texto.upper() or "ADIÓS" in texto.upper():
         # Imprimir respuesta
         print("Hasta luego. ¡Que tengas un buen día!")
         resultado_label.config(text="Hasta luego. ¡Que tengas un buen día!")
@@ -244,7 +244,6 @@ def abrir_calculadora():
         # Intentar abrir gnome-calculator
         subprocess.Popen(["gnome-calculator"])      
     except FileNotFoundError:
-        print("Error con su calculadora")
         try:
             # Intentar abrir mate-calc
             subprocess.Popen(["mate-calc"])
@@ -254,7 +253,6 @@ def abrir_calculadora():
                 subprocess.Popen(["kcalc"])
             except FileNotFoundError:
                 print("No se encontró ninguna calculadora instalada en el sistema.")
-
 
 # Función para detener la escucha
 def detener_escucha():
