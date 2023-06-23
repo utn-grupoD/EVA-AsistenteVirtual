@@ -127,7 +127,7 @@ def procesar_comando(texto):
         engine.say("¡Hola! ¿En qué puedo ayudarte?")
         engine.runAndWait()
 
-    elif "ADIÓS" in texto.upper() or "ADIÓS" in texto.upper():
+    elif "ADIÓS" in texto.upper() or "ADIOS" in texto.upper():
         # Imprimir respuesta
         print("Hasta luego. ¡Que tengas un buen día!")
         resultado_label.config(text="Hasta luego. ¡Que tengas un buen día!")
