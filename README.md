@@ -61,3 +61,5 @@ TECNOLOGIAS DEL PROYECTO
 
 IMPORTANTE: tener habilitado entrada y salida de audio en "Dispositivos" de la maquina virtual.
 
+EJECUTAR DESDE CARPETA PRINCIPAL python3 EVA/eva.py
+
