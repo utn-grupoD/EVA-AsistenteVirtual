@@ -184,31 +184,9 @@ def procesar_comando(texto):
         engine.runAndWait()
         webbrowser.open('https://github.com')
 
-    elif "BUSCA" or "BUSQUE" or "BUSCAME" or "BUSCAR" in texto.upper():
-        # Obtener el término de búsqueda eliminando la palabra "busca"
-        termino_busqueda = texto.replace("Busca", "").strip()
-
-        # Realizar la búsqueda en Wikipedia
-    elif "CHISTE" in texto.upper():
-        # Obtener un chiste
-        chiste = pyjokes.get_joke(language='es')
-
-        print(chiste)
-
-        # Decir el chiste
-        engine.say(chiste)
-        engine.runAndWait()
-
-    elif "SPOTIFY" in texto.upper():
-        engine.say("Abriendo Spotify")
-        engine.runAndWait()
-        subprocess.Popen(["spotify"])
-
-    elif "CALCULADORA" in texto.upper():
-        engine.say("Abriendo la calculadora")
-        engine.runAndWait()
-        subprocess.Popen(["gnome-calculator"])
-   
+    elif "BUSCA" in texto.upper() or "BUSQUE" in texto.upper() or "BUSCAME" in texto.upper() or "BUSCAR" in texto.upper():
+        # Obtener el término de búsqueda eliminando las palabras clave
+        termino_busqueda = texto.replace("BUSCA", "").replace("BUSQUE", "").replace("BUSCAME", "").replace("BUSCAR", "").strip()
 
         try:
             resultado = wikipedia.summary(termino_busqueda, sentences=2)
@@ -234,11 +212,31 @@ def procesar_comando(texto):
             print("No se encontró ninguna página en Wikipedia para el término de búsqueda.")
             respuesta_text.delete(1.0, tk.END)  # Limpiar el contenido anterior
             respuesta_text.insert(tk.END, "No se encontró ninguna página en Wikipedia para el término de búsqueda.")
-    else:
-        engine.say("Lo siento. Por el momento no reconozco ese comando.")
+
+    elif "CHISTE" in texto.upper():
+        # Obtener un chiste
+        chiste = pyjokes.get_joke(language='es')
+
+        print(chiste)
+
+        # Decir el chiste
+        engine.say(chiste)
         engine.runAndWait()
-        print("Comando no reconocido")
-        resultado_label.config(text="Comando no reconocido")
+
+
+
+
+    elif "SPOTIFY" in texto.upper():
+        engine.say("Abriendo Spotify")
+        engine.runAndWait()
+        subprocess.Popen(["spotify"])
+
+    elif "CALCULADORA" in texto.upper():
+        engine.say("Abriendo la calculadora")
+        engine.runAndWait()
+        subprocess.Popen(["gnome-calculator"])
+   
+
 
 
 # Función para detener la escucha
