@@ -178,6 +178,11 @@ def procesar_comando(texto):
         engine.say("Abriendo Diario Los Andes")
         engine.runAndWait()
         webbrowser.open('https://www.losandes.com.ar')
+        
+    elif "YOUTUBE" in texto.upper():
+        engine.say("Abriendo Youtube")
+        engine.runAndWait()
+        webbrowser.open('https://www.youtube.com/')
 
     elif "GITHUB" in texto.upper():
         engine.say("Abriendo Github")
