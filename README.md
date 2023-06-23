@@ -13,20 +13,20 @@ sus dispositivos.
 
 INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS MANUAL(Comandos en la terminal):
 
-  sudo apt install python3-pip
-	sudo apt-get install apt
-	pip install SpeechRecognition
-	sudo apt-get install portaudio19-dev
-	pip install pyaudio
-	sudo apt-get install python3-tk
-	pip install pyttsx3
-	sudo apt-get install espeak
-	pip install wikipedia
-	pip install pyjokes
-	pip install pillow
-	pip install --upgrade pillow
-	-> Si no tenemos instalado el paquete imagetk 
-		    sudo apt-get install python3-pil.imagetk
+  * sudo apt install python3-pip
+  * sudo apt-get install apt
+  * pip install SpeechRecognition
+  * sudo apt-get install portaudio19-dev
+  * pip install pyaudio
+  * sudo apt-get install python3-tk
+  * pip install pyttsx3
+  * sudo apt-get install espeak
+  * pip install wikipedia
+  * pip install pyjokes
+  * pip install pillow
+  * pip install --upgrade pillow
+  * -> Si no tenemos instalado el paquete imagetk
+  * sudo apt-get install python3-pil.imagetk
 
 INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS AUTOMATICA(Ejecutando un script en la terminal):
 
@@ -59,4 +59,6 @@ TECNOLOGIAS DEL PROYECTO
 - Github
 - Máquina virtual Oracle VirtualBox
 - Ubuntu 22.04
+
+IMPORTANTE: tener habilitado entrada y salida de audio en "Dispositivos" de la maquina virtual.
 
