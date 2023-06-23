@@ -49,8 +49,6 @@ COMANDOS QUE PUEDE REALIZAR EL ASISTENTE:
 * [Abrir Github]
 * [Diario Los Andes]
 * [Decir un chiste]
-* [Abrir Spotify]
-* [Abrir la calculadora]
 
 TECNOLOGIAS DEL PROYECTO
 - Jira Software
