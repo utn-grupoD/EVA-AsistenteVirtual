@@ -30,11 +30,9 @@ INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS MANUAL(Comandos en la terminal):
 
 INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS AUTOMATICA(Ejecutando un script en la terminal):
 
-Dirijase al directorio "Comandos utiles" y abra una terminal alli.
-    -> Dar permisos de ejecucion:
-    		  chmod +x instalar_librerias.sh
-    -> Ejecutar script
-    		  ./instalar_librerias.sh
+- Dirijase al directorio "Comandos utiles" y abra una terminal alli.
+- > Dar permisos de ejecucion: chmod +x instalar_librerias.sh
+  > -> Ejecutar script: ./instalar_librerias.sh
 
 
 COMANDOS QUE PUEDE REALIZAR EL ASISTENTE:
@@ -62,4 +60,6 @@ TECNOLOGIAS DEL PROYECTO
 IMPORTANTE: tener habilitado entrada y salida de audio en "Dispositivos" de la maquina virtual.
 
 EJECUTAR DESDE CARPETA PRINCIPAL python3 EVA/eva.py
+![image](https://github.com/utn-grupoD/EVA-AsistenteVirtual/assets/67133247/d96c4740-c024-43c1-a50c-a0338698d31a)
+
 
