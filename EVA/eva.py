@@ -228,9 +228,6 @@ def procesar_comando(texto):
         engine.say(chiste)
         engine.runAndWait()
 
-
-
-
     elif "SPOTIFY" in texto.upper():
         engine.say("Abriendo Spotify")
         engine.runAndWait()
@@ -239,9 +236,24 @@ def procesar_comando(texto):
     elif "CALCULADORA" in texto.upper():
         engine.say("Abriendo la calculadora")
         engine.runAndWait()
-        subprocess.Popen(["gnome-calculator"])
-   
+        abrir_calculadora()
 
+
+def abrir_calculadora():
+    try:
+        # Intentar abrir gnome-calculator
+        subprocess.Popen(["gnome-calculator"])
+    except FileNotFoundError:
+        try:
+            # Intentar abrir mate-calc
+            subprocess.Popen(["mate-calc"])
+        except FileNotFoundError:
+            try:
+                # Intentar abrir kcalc
+                subprocess.Popen(["kcalc"])
+            except FileNotFoundError:
+                print("No se encontró ninguna calculadora instalada en el sistema.")
+                # Aquí puedes mostrar un mensaje al usuario indicando que no se encontró ninguna calculadora instalada.
 
 
 # Función para detener la escucha
