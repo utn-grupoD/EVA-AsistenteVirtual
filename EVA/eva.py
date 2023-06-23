@@ -242,8 +242,9 @@ def procesar_comando(texto):
 def abrir_calculadora():
     try:
         # Intentar abrir gnome-calculator
-        subprocess.Popen(["gnome-calculator"])
+        subprocess.Popen(["gnome-calculator"])      
     except FileNotFoundError:
+        print("Error con su calculadora")
         try:
             # Intentar abrir mate-calc
             subprocess.Popen(["mate-calc"])
@@ -253,7 +254,6 @@ def abrir_calculadora():
                 subprocess.Popen(["kcalc"])
             except FileNotFoundError:
                 print("No se encontró ninguna calculadora instalada en el sistema.")
-                # Aquí puedes mostrar un mensaje al usuario indicando que no se encontró ninguna calculadora instalada.
 
 
 # Función para detener la escucha
