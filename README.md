@@ -31,8 +31,8 @@ INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS MANUAL(Comandos en la terminal):
 INSTRUCCIONES PARA LA INSTALACION DE LIBRERIAS AUTOMATICA(Ejecutando un script en la terminal):
 
 - Dirijase al directorio "Comandos utiles" y abra una terminal alli.
-- > Dar permisos de ejecucion: chmod +x instalar_librerias.sh
-  > -> Ejecutar script: ./instalar_librerias.sh
+- -> Dar permisos de ejecucion: chmod +x instalar_librerias.sh
+- -> Ejecutar script: ./instalar_librerias.sh
 
 
 COMANDOS QUE PUEDE REALIZAR EL ASISTENTE:
