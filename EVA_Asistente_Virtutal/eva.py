@@ -33,11 +33,11 @@ contenedor2 = tk.Frame(ventana)
 contenedor2.pack()
 
 # Cargar la imagen
-imagen = Image.open("eva.jpeg")
+imagen = Image.open("EVA_Asistente_Virtutal/eva.jpeg")
 imagen = imagen.resize((100, 100))  # Ajustar el tamaño de la imagen según tus necesidades
 imagen = ImageTk.PhotoImage(imagen)
 
-# Crear un widget Label para mostrar la imagen
+#Crear un widget Label para mostrar la imagen
 imagen_label = tk.Label(contenedor, image=imagen)
 imagen_label.pack(side=tk.RIGHT, padx=10, pady=10)
 
@@ -50,7 +50,7 @@ respuesta_text = tk.Text(ventana, height=6, width=40)
 respuesta_text.pack(padx=10, pady=10)
 
 # Cargar la imagen del GIF de carga y ajustar su tamaño
-imagen_carga = Image.open("carga.gif")
+imagen_carga = Image.open("EVA_Asistente_Virtutal/carga.gif")
 imagen_carga = imagen_carga.resize((30, 30))  # Ajustar el tamaño del GIF según tus necesidades
 imagen_carga = ImageTk.PhotoImage(imagen_carga)
 
@@ -184,7 +184,7 @@ def procesar_comando(texto):
         engine.runAndWait()
         webbrowser.open('https://github.com')
 
-    elif "BUSCA" or "BUSQUE" or "BUSCAME" in texto.upper():
+    elif "BUSCA" or "BUSQUE" or "BUSCAME" or "BUSCAR" in texto.upper():
         # Obtener el término de búsqueda eliminando la palabra "busca"
         termino_busqueda = texto.replace("Busca", "").strip()
 
