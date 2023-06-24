@@ -48,6 +48,8 @@ COMANDOS QUE PUEDE REALIZAR EL ASISTENTE:
 * [Diario Los Andes]
 * [Decir un chiste]
 * [Abrir calculadora]
+* [Saludar]
+* [Despedirse]
 
 TECNOLOGIAS DEL PROYECTO
 - Jira Software
